@@ -1,0 +1,29 @@
+{
+  "songs": [
+    {
+      "title": "The Walk",
+      "artist": "Mayer Hawthorne",
+      "album": "How Do You Do"
+    },
+    {
+      "title": "Medicine",
+      "artist": "Grace Potter",
+      "album": "Grace Potter and the Nocturnals"
+    },
+    {
+      "title": "Legs",
+      "artist": "ZZ Top",
+      "album": "Eliminator"
+    },
+    {
+      "title": "The Logical Song",
+      "artist": "SuperTramp",
+      "album": "Breakfast in America"
+    },
+    {
+      "title": "Another Brick in the Wall",
+      "artist": "Pink Floyd",
+      "album": "The Wall"
+    }
+  ]
+}
