@@ -7,14 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/mainSASS.css">
 </head>
-<body>
+<body ng-app="angularize">
 	<div class="container">
 		<div class="row">
 			<nav class="navbar navbar-default col-sm-11">
 			  <div class="container">
 				  <div class="row">
-						<div id="viewMusic" class="setBar col-sm-1">View Music</div>
-						<div id="viewAddMusic" class="setBar col-sm-1">Add Music</div>
+						<div id="viewMusic" class="setBar col-sm-1">
+							<a href="#/songs/list" title="">View Music</a>	
+						</div>
+						<div id="viewAddMusic" class="setBar col-sm-1">
+							<a href="#/songs/add" title="">Add Music</a>
+						</div>
 						<!-- <li><a href="#">Profile</a></li> -->
 						<div class="col-sm-offset-9">
 							<button id="needMoreSongs" type="button">More Songs</button>
@@ -72,26 +76,29 @@
 						</div>
 					</div>
 			</div>
-			<fieldset id="nameDiv" class="col-sm-7">
-			</fieldset>
-			<fieldset id="viewDiv">
-				<div id="addSongDiv">
-					<input id="addSong" class="addInput" placeholder="Add Song">
-					<input id="addArtist" class="addInput" placeholder="Add Artist">
-					<input id="addAlbum" class="addInput" placeholder="Add Albulm">
-					<button id="add">ADD IT!</button>
-				</div>
-			</fieldset>
+<!-- this is the view -->
+			<div class="col-sm-7" ng-view>
+			</div>
 		</div>
 	</div>			
 
 
 
 
-
+<!-- third party libs -->
 	<script src="node_modules/jquery.2/node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/angular-route/angular-route.min.js"></script>
+	<script src="node_modules/firebase/firebase.js"></script>	
+<!-- application scripts -->
 	<script src="app/app.js"></script>
+	<script src="/app/values/FirebaseCreds.js"></script>
+<!-- contollers -->
+	<script src="app/controllers/songListCtrl.js"></script>
+	<script src="app/controllers/addViewCtrl.js"></script>
+<!-- factories -->
+	<script src="app/factories/SongFactory.js"></script>
+	<script src="app/factories/AuthFactory.js"></script>
 </body>
 </html>

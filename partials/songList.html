@@ -1,0 +1,10 @@
+<div ng-controller="songListCtrl">
+	<fieldset id="nameDiv">
+		<div ng-repeat="song in songs">
+			<div class="col-xs-12">{{song.title}}</div>
+			<div class="col-xs-3 col-xs-offset-1">{{song.artist}}</div>
+			<div class="col-xs-3">{{song.album}}</div>
+			<div class="col-xs-1 col-xs-offset-3"><button class="btn btn-danger">X</button></div>
+		</div>
+	</fieldset>
+</div>
