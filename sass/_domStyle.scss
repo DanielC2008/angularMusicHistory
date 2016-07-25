@@ -1,0 +1,23 @@
+fieldset {	
+	background-color: #FEFAC0;
+	overflow: hidden;
+	height: 450px;
+	margin: 5px 0;
+	border: 2px solid black;
+	border-box: box-sizing;
+	padding: 0 12px;
+}
+
+#addSongDiv {
+	width: 250px;
+	height: 300px;
+	margin: 50px auto;
+	border: 3px solid grey;
+}
+
+#add {
+	display: inline-block;
+	padding: 10px;
+	float: left;
+	margin: 10px 85px;
+}

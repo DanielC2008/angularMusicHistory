@@ -1,0 +1,39 @@
+@import "nav";
+
+.songDiv {
+	margin: 20px 5px;
+	border-bottom: 1px dashed burlywood;
+}
+
+.titleTrack {
+	font-size: 1.5em;
+	color: #785616;
+	margin-top: 10px 0 10px 0;
+}
+
+.artist {
+	margin: 0 0 0 5px;
+	display: inline-block;
+	font-size: 1.25rem;
+	color: black;
+}
+
+.album {
+	margin: 0;
+	padding-left: 5px;
+	display: inline-block;
+	font-size: 1.25rem;
+	color: black;
+}
+
+.deleteButtons {
+	float: right;
+	@extend %burlywood;
+}
+
+.addInput {
+	display: inline-block;
+	padding: 10px;
+	float: left;
+	margin: 20px 45px;
+}

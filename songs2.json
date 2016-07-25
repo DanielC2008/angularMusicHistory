@@ -1,0 +1,24 @@
+{
+  "songs": [
+    {
+      "title": "Welcome to the Jungle",
+      "artist": "Guns & Roses",
+      "album": "Appetite for Destruction"
+    },    
+    {
+      "title": "Ironic",
+      "artist": "Alanis Morisette",
+      "album": "Jagged Little Pill"
+    },    
+    {
+      "title": "I Summon You",
+      "artist": "Spoon",
+      "album": "Give Me Fiction"
+    },    
+    {
+      "title": "Toddler",
+      "artist": "Battles",
+      "album": "Gloss Drop"
+    }
+  ]  
+}

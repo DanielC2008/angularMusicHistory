@@ -1,0 +1,35 @@
+@import "nav"; 
+
+.options {
+	height: 450px;
+	margin: 5px 15px 0 11px;
+	background-color: #4DD7FA;
+	border: 2px solid black;
+
+	:nth-child(n) {
+		margin: 4px;
+	}
+
+}
+input {
+	display: inline-block;
+	}
+
+.genre {
+	display: block;
+} 
+
+.checkBoxLeft {
+	padding: 0;
+	height: 100px;
+	margin: 10px;
+	display: inline-block;
+}
+
+.checkBoxRight {
+	@extend .checkBoxLeft;
+}
+
+#filterBtn {
+	@extend %burlywood;
+}

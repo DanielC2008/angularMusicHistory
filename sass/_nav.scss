@@ -1,0 +1,30 @@
+%burlywood{
+	background-color: burlywood;
+}
+.navbar-default {
+	margin: 0 20px;
+	background-color: #FFB4B0;
+	border: 2px solid black;
+
+	.seperator {
+		display: inline-block;
+		margin: 2px 0;
+		margin-top: 45px;
+		padding: 0;
+	}
+}
+
+.setBar {
+	font-size: 1.5rem;
+	margin-top: 45px;
+	display: inline-block;
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+	padding: 0;
+}
+
+#needMoreSongs {
+	margin: 40px 0 0 10px;
+	@extend %burlywood
+}
