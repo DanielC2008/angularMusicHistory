@@ -30,52 +30,6 @@
 	</div>
 <!-- this is the options div for song choices -->
 <!-- BOOTSTRAP HERE -->
-	<div class="container">
-		<div class="row">
-			<div class="options col-sm-4"> 
-				<div>
-					<label for="Song Length">Song Length:
-						<input type="range" name="Song Length">
-					</label>
-				</div>
-				<div>
-					<label for="Artist">Artist:
-						<select id="artistSelect" name="Artist">
-							<option value="" disabled selected>Filter By Artist</option>
-						</select>
-					</label>
-				</div>
-				<div>
-					<label for="Albulm">Albulm:
-						<select id="albumSelect" name="Albulm">
-							<option value="" disabled selected>Filter By Album</option>
-						</select>
-					</label>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="checkBox">
-							<p class="genre">Genre:</p>
-							<!-- for column checkboxes -->
-							<div class="checkBoxLeft col-sm-1"> 
-								<label><input type="checkbox" name="Genres" value="Rock">Rock</label>
-								<label><input type="checkbox" name="Genres" value="Pop">Pop</label>
-								<label><input type="checkbox" name="Genres" value="Blues">Blues</label>
-							</div>
-							<div class="checkBoxRight col-sm-2">	
-								<label><input type="checkbox" name="Genres" value="Classical">Classical</label>
-								<label><input type="checkbox" name="Genres" value="Jazz">Jazz</label>
-								<label><input type="checkbox" name="Genres" value="Hip Hop">Hip Hop</label>
-							</div>	
-						</div>
-					</div>
-				</div>	
-				  <div class="container">
-	  				<div class="row">
-						<button id="filterBtn"  class="col-sm-3" name="Filter">Filter</button>
-						</div>
-					</div>
-			</div>
 <!-- this is the view -->
 			<div class="col-sm-7" ng-view>
 			</div>

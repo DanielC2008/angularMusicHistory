@@ -7,6 +7,10 @@ const app = angular.module("angularize", ["ngRoute"])
 app.config(function($routeProvider) {
 
 	$routeProvider.
+	when("/songs/login", {
+		templateUrl: "partials/login.html",
+		controller: "loginCtrl"
+	}).
 	when("/songs/list", {
 		templateUrl: "partials/songList.html",
 		controller: "songListCtrl"
@@ -15,5 +19,5 @@ app.config(function($routeProvider) {
 		templateUrl: "partials/addView.html",
 		controller: "addViewCtrl"
 	}).
-	otherwise("/songs/list");
+	otherwise("/songs/login");
 });

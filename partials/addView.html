@@ -1,8 +1,8 @@
 <fieldset id="viewDiv">
 	<div id="addSongDiv">
-		<input id="addSong" class="addInput" placeholder="Add Song">
-		<input id="addArtist" class="addInput" placeholder="Add Artist">
-		<input id="addAlbum" class="addInput" placeholder="Add Albulm">
-		<button id="add">ADD IT!</button>
+		<input id="addSong" class="addInput" placeholder="Add Song" ng-model="newSong.title">
+		<input id="addArtist" class="addInput" placeholder="Add Artist" ng-model="newSong.artist">
+		<input id="addAlbum" class="addInput" placeholder="Add Albulm" ng-model="newSong.album">
+		<button id="add" ng-click="addNewSong()">ADD IT!</button>
 	</div>
 </fieldset>

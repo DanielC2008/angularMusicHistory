@@ -2,7 +2,7 @@
 
 app.factory("SongStorage", function(FirebaseURL, $q, $http) {
 
-	let getSongs = function() {
+	const getSongs = function() {
 		let songs = [];
 		return $q(function(resolve, reject) {
 			$http.get(`${FirebaseURL}/songs.json`)
@@ -20,5 +20,32 @@ app.factory("SongStorage", function(FirebaseURL, $q, $http) {
 		});
 	};
 
-	return {getSongs};
+	const postNewSong = function(newSong) {
+		return $q(function(resolve, reject) {
+			$http.post(`${FirebaseURL}/songs.json`,
+				JSON.stringify(newSong))
+			.success(function() {
+				resolve();
+			})
+			.error(function(error) {
+				reject(error);
+			});
+		});
+	};
+
+	const deleteSong = function(songId) {
+		return $q(function(resolve, reject) {
+			$http.delete(`${FirebaseURL}/songs/${songId}.json
+				`)
+			.success(function() {
+				resolve();
+			})
+			.error(function(error) {
+				reject(error);
+			});
+		});
+	};
+
+
+	return {getSongs, postNewSong, deleteSong};
 });
