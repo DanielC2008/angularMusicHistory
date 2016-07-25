@@ -20,8 +20,8 @@
 							<a href="#/songs/add" title="">Add Music</a>
 						</div>
 						<!-- <li><a href="#">Profile</a></li> -->
-						<div class="col-sm-offset-9">
-							<button id="needMoreSongs" type="button">More Songs</button>
+						<div class="col-sm-offset-9" ng-controller="logoutCtrl">
+							<button id="needMoreSongs" type="button" ng-click="logout()">Logout</button>
 						</div>
 				  </div>
 			  </div>
@@ -51,6 +51,8 @@
 <!-- contollers -->
 	<script src="app/controllers/songListCtrl.js"></script>
 	<script src="app/controllers/addViewCtrl.js"></script>
+	<script src="app/controllers/loginCtrl.js"></script>
+	<script src="app/controllers/logoutCtrl.js"></script>
 <!-- factories -->
 	<script src="app/factories/SongFactory.js"></script>
 	<script src="app/factories/AuthFactory.js"></script>
